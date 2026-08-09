@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>WebFusion 2.0</title>
+
+    <link
+        rel="stylesheet"
+        href="styles/main.css"
+    >
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="topbar">
+
+            <div>
+                <h1>⚡ WebFusion</h1>
+                <p>Browser Virtual Machine Platform</p>
+            </div>
+
+            <div class="version">
+                2.0
+            </div>
+
+        </header>
+
+
+        <section class="vm-card">
+
+            <div
+                id="vm-screen"
+                class="vm-screen"
+            >
+
+                <div id="boot-message">
+
+                    <div class="boot-icon">
+                        ⚡
+                    </div>
+
+                    <h2>WebFusion 2.0</h2>
+
+                    <p>
+                        Virtual machine ready
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="controls">
+
+                <button id="start-btn">
+                    ▶ Start
+                </button>
+
+                <button id="pause-btn" disabled>
+                    ⏸ Pause
+                </button>
+
+                <button id="reset-btn" disabled>
+                    🔄 Reset
+                </button>
+
+                <button id="fullscreen-btn">
+                    ⛶ Fullscreen
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="status-panel">
+
+            <div>
+                <span>Engine</span>
+                <strong id="engine-status">
+                    Not loaded
+                </strong>
+            </div>
+
+            <div>
+                <span>CPU</span>
+                <strong id="cpu-status">
+                    x86-64
+                </strong>
+            </div>
+
+            <div>
+                <span>GPU</span>
+                <strong id="gpu-status">
+                    Detecting...
+                </strong>
+            </div>
+
+            <div>
+                <span>VM</span>
+                <strong id="vm-status">
+                    Stopped
+                </strong>
+            </div>
+
+        </section>
+
+
+        <footer>
+            WebFusion 2.0 • Experimental browser virtualization
+        </footer>
+
+    </main>
+
+
+    <script
+        type="module"
+        src="src/main.js"
+    ></script>
+
+</body>
+
+</html>
